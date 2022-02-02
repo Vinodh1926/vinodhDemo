@@ -1,0 +1,16 @@
+name: Leap Demo Assessment
+
+on: [push]
+
+jobs:
+  run-shell-command:
+      runs-on: ubuntu-latest
+      steps:
+        - name: echo a string
+          run: echo "Hello Welcome to Leap Demo Asessment"
+          name: multiline script
+          run: |
+            node -v
+            npm -v
+        - name: Log Greeting Time 
+          run: echo "${{steps.greet.outputs.time }}"
