@@ -7,6 +7,7 @@ jobs:
       runs-on: ubuntu-latest
       steps:
         - name: echo a string
+          id: greet
           run: echo "Hello Welcome to Leap Demo Asessment"
         - name: multiline script
           run: |
